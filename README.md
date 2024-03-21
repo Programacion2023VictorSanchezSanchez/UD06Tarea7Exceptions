@@ -76,5 +76,36 @@ public class Main {
     
 }
 
-d)
+d) Un bloque try-catch para cada uno
+
+### Ejercicio 6
+Introducimos estos bloques try-catch
+
+try {
+
+            posicion = Integer.parseInt(cadena);
+            
+            if (posicion < 0 || posicion > valores.length) {
+            
+                throw new IndexOutOfBoundsException("La posición ingresada está fuera de los límites del array.");
+                
+            }
+            
+        } catch (NumberFormatException e) {
+        
+            System.out.println("Error: La posición debe ser un número entero.");
+            
+            return;
+            
+        } catch (IndexOutOfBoundsException e) {
+        
+            System.out.println("Error: La posición debe estar dentro del rango del array.");
+            
+            return;
+        }
+
+
+
+
+
 
